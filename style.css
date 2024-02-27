@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Lato:wght@300;900&family=Oswald&family=Poppins:wght@500&family=Roboto:ital,wght@0,400;0,500;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Francois+One&family=Lato:wght@300;900&family=Oswald&family=Poppins:wght@500&family=Roboto:ital,wght@0,400;0,500;1,300;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+body{
+    background-color:rgba(251, 243, 240, 0.815);
+    color: black;
+    /* #f0eee8,,rgba(246, 210, 197, 0.815) */
+}
+/* Button style */
+.button{
+    border: none;
+    background-color:  rgb(3,3,102);
+    color: white;
+    letter-spacing: 1px;
+    padding: 1rem;
+    margin: 1vh;
+    border-radius: 30px;
+    font-weight:1rem;
+    text-transform: uppercase;
+}
+.padding2{
+    padding: 1rem 2rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* Mobile Mode */
+@media screen and (min-width:300px){
+    /* header */
+    header h1{
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 1rem;
+        color:rgb(3,3,102) ;
+    }
+    header  h1 span{
+        color:rgb(89, 77, 122);
+    }
+    header .sub-menu{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        font-size: 0.8rem;
+        padding-top: 15px;
+    }
+    header li:hover{
+        text-decoration: underline;
+    }
+    header .sub-menu img{
+        height: 12px;
+    }
+    header ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        width: 50%;
+    }
+    /* section one css */
+    .one .left h1{
+        color:indianred;
+        font-size: 2rem;
+        padding-bottom: 0.3rem;
+        padding-top: 1.7rem;
+    }
+    .beauty{
+        color: rgb(74, 73, 73);
+        padding-bottom: 1.5rem;
+        font-size: 1.6rem;  
+    }
+    .one .left p{
+        padding-bottom: 15px;
+    }
+    .button{
+        width:160px;
+    }
+    .one .left .features{
+        padding: 1rem;
+    }
+    .one .left .feature{
+        display: flex;
+        align-items: center;
+        margin: 2vh 0;
+    }
+    .one .left .feature p{
+       font-family: 'Poppins';
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+        padding: 1rem;
+    }
+    .one .left .feature img{
+        height: 2rem;
+    }
+    .one .right img{
+        width: 90%;
+        height:400px;
+    }
+    .one .right .foreground{
+        width: 300px;
+        height: 400px;
+    }
+    .one .right .background{
+        height: 400px;
+        width:100%;
+    }
+    .one .right{
+        position: relative;
+    }
+    .one .right .background{
+        right: 0;
+        position: absolute;
+        top:0;
+        z-index:-1;  
+    }
+    /* section two css*/
+    .two .left img{
+        padding-top: 1rem;
+        width: 65%;
+        height: 200px;
+    }
+    .down{
+        padding-top: 20px;
+    }
+    .two .right h3{
+        color: #666666;
+        font-size: 1.6rem;  
+        padding-top: 8px;  
+    }
+    .two .right p{
+        padding-top: 10px;
+        font-size: 0.8rem;
+        font-weight: lighter;
+        font-family: 'Poppins';
+        text-align: justify;
+        padding-bottom: 15px;
+        line-height: 20px;
+    }
+    /*section three css  */
+    .three{
+        text-align: center;
+        padding:0 2rem;
+    }
+    .three img{
+        height:104px;
+        width:235px;
+    }
+    .three h3{
+        font-size: 1.9rem;
+        color: #666666;
+        padding-bottom: 10px;
+    }
+    .three h5{
+        font-size: 1rem; 
+        color:#7b1212;
+        padding-bottom: 2rem;
+    }
+    .three .offers .offer img{
+        height: auto;
+        width: 22%;
+    }
+    .three .offers .offer{
+        height: 30vh;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: justify;
+        align-items: center;
+    }
+    .three .offer h4{
+        font-size: 1rem;
+    }
+    /* section four css */
+    .four{
+        text-align: center;
+    }
+    .four h4{
+        color: #7b1212;
+        font-size: 2rem;
+    }
+    .four h3{
+        color:#666666;
+        font-size: 1.5rem;
+        padding: 0.5rem  1rem ;
+    }
+    .four .jewellery h4{
+        color:rgb(120, 41, 77);
+        font-size: 1.4rem;
+    }
+    .four .jewelleries .jewellery img{
+        height:auto;
+        width: 100%;
+        padding-top: 10px;
+    }
+    .four .jewelleries .jewellery{
+        display: flex;
+        width: 87%;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem auto;
+        border: 1px solid #666666;
+        border-radius: 16px;
+        padding: 0.8rem;
+        cursor: pointer;
+    }
+    .four .jewelleries .jewellery:hover{
+        border: 3px solid rgb(22, 2, 67);
+        background-color:rgba(246, 229, 224, 0.815);
+        color: black;
+    }
+    .four .jewelleries .jewellery .button:hover{
+        background-color:rgb(120, 41, 77);
+        color:white;
+    }
+    .four .jewelleries .jewellery .price{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .four .jewellery .price h4{
+        color: #7b1212;
+        font-size: 1rem;
+        padding-top: 10px;
+    }
+    .four span{
+      padding-bottom: 10px;
+    }
+    .four .jewellery .button{
+        width: 133px;
+        height:5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .button{
+        width: 140px;
+        height: 7vh;
+        font-size: 0.9rem;
+    }
+    /* section five css */
+    footer .special-offer{
+        padding: 1rem;
+        text-align: center;
+    }
+    footer .special-offer h4{
+        font-size: 1.5rem;
+        color:rgb(90, 6, 77);
+        padding-top: 10px;
+    }
+    footer .special-offer p{
+        padding: 1rem;
+        line-height:18px;
+        font-size: 1rem;
+    }
+    footer .special-offer .input input{
+        padding: 0.8rem;
+        width: 80%;
+        border-radius: 30px;
+        border: 1px solid #666666;
+        margin-bottom: 1vh;
+    }
+    footer .details{
+        background:linear-gradient(to bottom, white,#0067ac);
+        text-align: center;
+        height: 52vh;    
+    }
+    footer .details .detail-heading h1{
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+    }
+    footer .details .detail-heading{
+        width: 60%;
+        margin: 10px;
+    }
+    footer .details .detail-heading p{
+        color: #7b1212;
+        font-weight: bold;
+        font-size: 0.7rem;
+        line-height: 12px;
+        padding: 2px;
+    }
+    footer .details .boxes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 35vh;
+        align-items: center;
+    }
+    footer .details .detail ul li h4{
+        font-size: 0.8rem;
+        color:rgb(19, 19, 68);
+        padding-bottom: 5px;
+    }
+    footer .details .detail ul{
+        list-style: none;
+    }
+    footer .details .detail ul li{
+        font-size: 0.7rem;
+        font-weight:400;
+        line-height: 15px;
+    }
+    footer .details .detail img{
+        height:30px;
+        padding:1px 1px;
+    }
+}
+/* Tablet Mode */
+@media screen and (min-width:700px){
+    /* header */
+    header h1{
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    header .sub-menu{
+        font-size: 1.2rem;
+        width:100%;
+    }
+    /* Section one css */
+    .one .left h1{
+        padding-top: 1rem;
+        font-size: 3.5rem;
+    }
+    .beauty{
+        font-size: 3rem;
+    }
+    .one .left p{
+        padding-top: 1rem;
+        font-size: 1.5rem;
+    }
+    .one .left button{
+        width: 200px;  
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.2rem;
+    }
+    .one .left .feature{
+        width:60%;
+        margin:0px;
+    }
+    .one .right img{
+        width: 90%;
+        height:450px;
+    }
+    .one .right .foreground{
+        width: 450px;
+    }
+    .one .right .background{
+        margin-right:30%;
+        width:100%;
+    }
+    /* section two css */
+    .two .left img{
+        height: 300px;
+    }
+    .two .right h4{
+        font-size: 1.4rem;
+    }
+    .two .right h3{
+        font-size: 2.7rem;
+    }
+    .two .right p{
+        font-size: 1.15rem;
+        line-height: 25px;
+        text-align:justify;
+        font-family:'Times New Roman', Times, serif;
+    }
+    /* section three css */
+    .three .offers{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+    } 
+    .three .offers .offer{
+        margin: 10px;
+    }
+    .three .offers h4{
+        padding-bottom: 0.4rem;
+    }
+    .three .offers .offer p{
+        height: 105px;
+        font-size: 0.8rem;
+    }
+    .three{
+        padding-top:2rem;
+        position: relative;
+        height: 65vh;
+    }
+    .three img{
+        height:100px;
+        width:100%;
+        padding:10px;
+    }
+    .three .top{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .three .down{
+        position:absolute;
+        bottom:0;
+        left:0;
+    }
+    /* section four css */
+    .four .jewelleries{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width:680px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .four .jewelleries .jewellery{
+        height:400px;
+        cursor: pointer;
+    }
+    .four .jewelleries .jewellery img{
+        height: 230px;
+        width: 280px;
+    }
+    .four .jewelleries .jewellery:hover{
+        border: 3px solid rgb(22, 2, 67);
+    }
+    /* section five css */
+    footer .details .boxes{
+        grid-template-columns: repeat(4, 1fr);
+        height: 30vh;
+    }
+    footer .details .detail-heading h1{
+        padding-top: 1.8rem;
+        font-size: 1.6rem;
+    }
+    footer .details .detail-heading p{
+        font-size: 0.9rem;
+    }
+    footer .details .detail ul li h4{
+        font-size: 0.9rem;
+        color:rgb(19, 19, 68); 
+    }
+    footer .details .detail ul li{
+        font-size: 0.9rem;
+        line-height: 20px;
+    }
+}
+/* Desktop Mode */
+@media screen and (min-width:1200px){
+    /* header */
+    header{
+        display: flex;
+        width: 55%;
+        align-items: center;
+        height: 15vh;
+        margin-left: 1.8rem;
+    }
+    header h1{
+        font-size: 1.7rem;
+    }
+    header .sub-menu{
+        font-size: 0.9rem;
+    }
+    /* section one css */
+    .one{
+        margin:0rem 3rem;
+        height: 82vh;
+    }
+    .one .left h1{
+        padding-top: 1rem;
+        font-size: 3.5rem;
+    }
+    .one .left .beauty p{
+        font-size: 3.5rem;
+        font-weight: normal;
+    } 
+    .one .left p{
+        padding-top: 20px;
+        font-size: 1.6rem; 
+        padding-bottom: 30px;
+    }
+    .one .left .button{
+        width: 250px;
+        height: 50px;
+    }
+    .one{
+        display: grid;
+       grid-template-columns: 60% auto;
+       position: relative;
+    }
+    .one .left .features{
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        position: absolute;
+        width: 90%;
+        height: 20vh;
+    }
+    .one .left .feature{
+        width: 260px;
+    }
+    .one .left .feature p{
+        margin-left: 15px;  
+        padding-top: 3rem;
+    }
+    .one .right img{
+        width: 100%;
+        height:auto;
+    }
+    .one .right .foreground{
+        width: 75%;
+        height: 60%;
+    }
+    .one .right .background{
+        position: absolute;
+        top: -10%;
+        left:-2%;
+        height: 60vh;
+        width: auto;
+    }
+    /* section two css */
+    .two{
+        display: grid;
+        grid-template-columns: 40% auto;
+        height: 70vh;
+    }
+    .two .left img{
+        padding: rem;
+        height: 500px;
+        width: 450px;
+    }
+    .two .right p{
+        padding-bottom: 2rem;
+    }
+    .two .right .button{
+        width: 250px;
+    }
+    /* section three css */
+    .three{
+        height:80vh;
+    }
+    .three h3{
+        padding-top: 1rem;
+        font-size: 2.8rem;
+    }
+    .three h5{
+        font-size: 1.5rem;
+    }
+    .three .offers{
+        width:80%;
+        margin: auto;
+    }
+    .three .offers .offer img{
+        height: 100px;
+        width: 100px;
+    }
+    .three .offers .offer p{
+        padding-top: 10px;
+        font-size: 0.9rem;
+        width:95%;
+        height: 15vh;
+    }
+    .three img{
+        height:150px;
+        width:100%;
+        padding:10px;
+    }
+    /* section four css */
+    .four{
+        height: 90vh;
+    }
+    .four .jewelleries{
+        width: 92%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-bottom: 50px;
+    }
+    .four .jewelleries .jewellery{
+        height: 400px;
+        width: 250px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .four .jewelleries .jewellery img{
+        height: 195px;
+        width: 220px;
+    }
+    .four .jewelleries .jewellery:hover{
+        border: 3px solid rgb(22, 2, 67);
+    }
+    .four .all-button{
+        margin: auto;
+    width: 200px;
+    height: 47px;
+    align-self: center;
+    }
+    /* section five css */
+    footer{
+        position: relative;
+        display: grid;
+        margin-top: 25vh;
+    }
+    footer .special-offer{
+        margin: auto;
+        width: 75%;
+        border: 1px solid #666666;
+        border-radius: 50px;
+        position: absolute;
+        top:-30%;
+        justify-self:center;
+        background: white;
+        background-image: url(./images/gradient-3.png);
+        background-size: 100%;
+    }
+    footer .special-offer .input{
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        margin: auto;
+    }
+    footer .special-offer .input input{
+        border: none; 
+    }
+    footer .special-offer .input .footer-button.button{
+        width: 140px;
+        background:linear-gradient(to bottom, white,rgb(31, 85, 102));
+        color: black;
+        font-weight: 600;
+    }
+    footer .details .boxes{
+        height: 40vh;
+    }
+    footer .special-offer h4{
+        font-size: 1.8rem;
+        color: #6be3f6;
+    }
+    footer .special-offer p{
+        font-size: 1.1rem;
+        font-weight: 550;
+        color: rgb(7, 7, 7);
+        line-height: 25px;
+    }
+    footer .details .detail-heading{
+        margin: 3rem;
+    }
+    footer .details .detail-heading h1{
+        line-height: 25px;
+    }
+    footer .details .detail-heading p{
+        line-height: 15px;
+    }
+    footer .details{
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 25% auto;
+        align-items: center;
+    }
+}
